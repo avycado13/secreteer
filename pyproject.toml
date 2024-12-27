@@ -7,6 +7,9 @@ description = "A Python script for encrypting and decrypting secrets"
 requires = ["hatchling>=1.0.0"]
 build-backend = "hatchling.build"
 
+[tool.hatch.build.targets.wheel]
+packages = ["src/secreteer"]
+
 [tool.hatch.dependencies]
 python = "^3.9"
 cryptography = "^3.4.7"
